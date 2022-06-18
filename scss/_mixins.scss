@@ -1,0 +1,12 @@
+@mixin textStyling($size: "inherit", $weight: "inherit", $height: "inherit") {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin displayFlex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
