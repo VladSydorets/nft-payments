@@ -50,20 +50,22 @@ window.addEventListener("load", (event) => {
 });
 
 // Fade Effect
-const appear = document.querySelectorAll(".appear");
+AOS.init();
 
-let handler = (entries) => {
-  entries.map((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("inview");
-    } else {
-      entry.target.classList.remove("inview");
-    }
-  });
-};
+// const appear = document.querySelectorAll(".appear");
 
-const io = new IntersectionObserver(handler);
+// let handler = (entries) => {
+//   entries.map((entry) => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add("inview");
+//     } else {
+//       entry.target.classList.remove("inview");
+//     }
+//   });
+// };
 
-appear.forEach((a) => {
-  io.observe(a);
-});
+// const io = new IntersectionObserver(handler);
+
+// appear.forEach((a) => {
+//   io.observe(a);
+// });
