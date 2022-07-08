@@ -7,6 +7,10 @@
 }
 
 @media (max-width: 992px) {
+  section.section__steps {
+    padding-top: 50px;
+  }
+
   section.section__hero {
     @include displayFlex(column, center, center);
     height: 90vh;
@@ -51,6 +55,7 @@
       }
 
       .nav__list {
+        @include displayFlex(column, center, center);
         position: absolute;
         top: 0;
         left: -1000px;
@@ -58,7 +63,6 @@
         height: 100vh;
         background-color: $blue-color;
         z-index: 1;
-        @include displayFlex(column, center, center);
         transition: 0.5s all ease-in-out;
       }
 
